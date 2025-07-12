@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            gap: 20px;
+            box-sizing: border-box;
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+
+        .product {
+            width: 22%;
+            min-width: 200px;
+            height: 500px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+
+        .product img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-name {
+            font-weight: bold;
+            font-size: 20px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .quantity {
+            width: 60px;
+            height: 35px;
+            font-size: 16px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .calculate-total {
+            background-color: green;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #total-price {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .total {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            background-color: green;
+
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Product List</h1>
+    <div class="container">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1693206578613-144dd540b892?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="ACER Laptop">
+            <div class="product-name">ACER Laptop</div>
+            <div class="price">₹45,000</div>
+            <input type="number" class="quantity" value="0">
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=400&auto=format&fit=crop&q=60"
+                alt="Macbook Air M1 Laptop">
+            <div class="product-name">Macbook Air M1 Laptop</div>
+            <div class="price">₹90,000</div>
+            <input type="number" class="quantity" value="0">
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60"
+                alt="M2 Laptop">
+            <div class="product-name">Macbook M2 Laptop</div>
+            <div class="price">₹50,000</div>
+            <input type="number" class="quantity" value="0">
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1663354027456-ce6a7e07d212?w=400&auto=format&fit=crop&q=60"
+                alt="HP 15s Laptop">
+            <div class="product-name">HP 15s Laptop</div>
+            <div class="price">₹56,000</div>
+            <input type="number" class="quantity" value="0">
+        </div>
+    </div>
+    <div class="btn">
+        <button class="total">Calculate total price</button>
+    </div>
+</body>
+
+</html>
